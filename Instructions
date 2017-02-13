@@ -1,0 +1,16 @@
+Set up a Client / Server that uses Networking
+
+What they are:
+Client - ATM machine
+Server - Account DTO that declares the withdrawal and deposit operations. It hosts the bank database with an ArrayList
+
+What they do:
+Client - Recieves updated balance from the server and displays it
+Server - Recieves the accountID/PIN/Amount/ButtonAction. Finds customer, updates account, and responds back to client with an updated balance
+
+1) Set up Server - DONE so far.
+2) Set up Client
+3) Send Hello World and recieve it back with a added string " - seen by server
+4) Send bank data from client to server (this is initiated from the withdraw/deposit buttons)
+5) Implement server-side activities (finds if information about customer is correct)
+6) Send back updated balance 

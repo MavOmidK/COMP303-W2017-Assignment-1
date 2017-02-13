@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="217.0" prefWidth="238.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+   <children>
+      <Label fx:id="labelAccountID" layoutX="14.0" layoutY="20.0" text="Account ID:" />
+      <Label fx:id="labelPIN" layoutX="14.0" layoutY="60.0" text="PIN:" />
+      <Label fx:id="labelAmount" layoutX="12.0" layoutY="140.0" text="Amount:" />
+      <Label fx:id="labelBalance" layoutX="14.0" layoutY="100.0" text="Balance" />
+      <Button fx:id="btnDeposit" layoutX="9.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleDepositButton" text="Deposit" />
+      <Button fx:id="btnWithdraw" layoutX="89.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleWithdrawButton" text="Withraw" />
+      <TextField fx:id="textAccountID" layoutX="102.0" layoutY="17.0" onAction="#handleDepositButton" prefHeight="21.0" prefWidth="63.0" />
+      <TextField fx:id="textAccountPIN" layoutX="100.0" layoutY="55.0" prefHeight="21.0" prefWidth="63.0" />
+      <TextField fx:id="textBalance" disable="true" layoutX="100.0" layoutY="95.0" prefHeight="21.0" prefWidth="63.0" />
+      <TextField fx:id="textAmount" layoutX="100.0" layoutY="135.0" prefHeight="21.0" prefWidth="63.0" />
+      <Button fx:id="btnCheckBalance" layoutX="173.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleCheckButton" text="Check" />
+   </children>
+</Pane>
